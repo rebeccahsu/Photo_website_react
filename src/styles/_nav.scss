@@ -1,0 +1,20 @@
+nav {
+    background-color: darken($base-color, 25%);
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 3rem;
+        li {
+            padding: 0.5rem 1rem;
+            a {
+                font-size: 1.2rem;
+                letter-spacing: 1px;
+                color: antiquewhite;
+                transition: .5s;
+                &:hover{
+                    color: rgb(165, 165, 165);
+                }
+            }
+        }
+    }
+}

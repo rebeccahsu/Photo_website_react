@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+    background-color: rgb(230, 230, 216);
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+$base-color: rgb(142, 142, 122);
+
+.morePic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem 5rem;
+
+    button {
+        padding: 0.5rem 1rem;
+        border: none;
+        font-size: 1.2rem;
+        background-color: $base-color;
+        color: #fff;
+        cursor: pointer;
+        border-radius: 0.25rem;
+        transition: .5s;
+        &:hover{
+            background-color: lighten($base-color,10%);
+            color: darken(#fff,80%);
+        }
+    }
+}
+
+@import "./nav";
+@import "./search";
+@import "./footer";
+@import "./pics";
